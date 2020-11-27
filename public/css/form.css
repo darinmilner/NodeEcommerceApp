@@ -1,0 +1,38 @@
+.form-control {
+  margin: 1rem 0;
+}
+
+.form-control label,
+.form-control input,
+.form-control textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.25rem;
+}
+
+.form-control input,
+.form-control textarea {
+  border: 1px solid goldenrod;
+  font: inherit;
+  border-radius: 2px;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+  outline-color: darkviolet;
+}
+button {
+  font: inherit;
+  border: 2px solid darkviolet;
+  color: darkviolet;
+  background: goldenrod;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30px;
+}
+
+button:hover,
+button:active {
+  background-color: purple;
+  color: whitesmoke;
+}

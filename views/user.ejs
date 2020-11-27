@@ -1,0 +1,29 @@
+<%- include("includes/head.ejs") %>
+<link rel="stylesheet" href="/css/form.css">
+<link rel="stylesheet" href="/css/product.css">
+
+</head>
+
+<body>
+    <%- include("includes/navigation.ejs") %>
+    <main>
+        <form class="product-form" action="/user" method="POST">
+            <div class="form-control">
+                <label for="title">Add A User</label>
+                <input type="text" name="userName" id="userName">
+            </div>
+
+            <button class="btn" type="submit">Submit</button>
+        </form>
+        <h1>Users</h1>
+        <% if(users.length > 0) {%>
+            <ul>
+            <% users.forEach((user) => { %>
+                <li><%= user.name %></li>
+            <% }) %>
+            </ul>
+        <%} else { %>
+            <h2>No users found</h2>
+        <%}%>
+    </main>
+    <%- include("includes/end.ejs") %>
