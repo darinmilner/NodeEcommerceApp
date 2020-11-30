@@ -21,3 +21,14 @@
   font-size: 1.2rem;
   margin: 0;
 }
+
+.danger {
+  color: red;
+  border-color: hotpink;
+}
+
+.danger:hover {
+  color: whitesmoke;
+  background-color: pink;
+  border-color: hotpink;
+}
