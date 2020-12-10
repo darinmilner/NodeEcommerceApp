@@ -32,25 +32,27 @@ main {
   height: 3.5rem;
   background-color: goldenrod;
   padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
 }
+.main-header__nav {
+  height: 100%;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .main-header__item-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
-.main-header__nav {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .main-header__item {
   margin: 0 1rem;
   padding: 0;
 }
-
 .main-header__item a:hover,
 .main-header__item a:active,
 .main-header__item a.active {
@@ -92,11 +94,15 @@ main {
   padding: 0;
 }
 
-.mobile-nav__item a {
+.mobile-nav__item a,
+.mobile-nav__item button {
   text-decoration: none;
   color: black;
   font-size: 1.5rem;
   padding: 0.5rem 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .mobile-nav__item a:active,
@@ -178,6 +184,21 @@ main {
 .card__actions a {
   margin: 0.25rem 0.25rem;
 }
+button {
+  font: inherit;
+  border: 2px solid darkviolet;
+  color: darkviolet;
+  background: goldenrod;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30px;
+}
+
+button:hover,
+button:active {
+  background-color: purple;
+  color: whitesmoke;
+}
 
 .btn {
   display: inline-block;
@@ -197,7 +218,32 @@ main {
   background-color: #00695c;
   color: white;
 }
+.btn.danger {
+  color: red;
+  border-color: red;
+}
 
+.btn.danger:hover,
+.btn.danger:active {
+  background: red;
+  color: white;
+}
+
+.user-message {
+  margin: auto;
+  width: 90%;
+  border: 1px solid dodgerblue;
+  padding: 1rem;
+  border-radius: 3px;
+  background-color: beige;
+  text-align: center;
+}
+
+.user-message__error {
+  border-color: red;
+  background-color: pink;
+  color: darkred;
+}
 @media (min-width: 768px) {
   .main-header__nav {
     display: flex;
@@ -205,5 +251,8 @@ main {
 
   #side-menu-toggle {
     display: none;
+  }
+  .user-message {
+    width: 30rem;
   }
 }

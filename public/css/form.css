@@ -21,18 +21,3 @@
 .form-control textarea:focus {
   outline-color: darkviolet;
 }
-button {
-  font: inherit;
-  border: 2px solid darkviolet;
-  color: darkviolet;
-  background: goldenrod;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 30px;
-}
-
-button:hover,
-button:active {
-  background-color: purple;
-  color: whitesmoke;
-}
